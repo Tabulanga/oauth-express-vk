@@ -9,7 +9,7 @@ Clone repo
 npm install
 ```
 
-Enter settings of MongoDB and VKapp in config/config.js
+Enter settings of MongoDB and VK-app in config/config.js
 
 ```
 npm start
