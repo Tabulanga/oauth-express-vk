@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1.text-center
+    | Пять друзей #{name}
+  .col-md-6.col-md-offset-3
+    ul
+      each friend in friends
+        li
+          .avatar
+            img( src=friend.photo_50 )
+          .name
+            a(href='http://vk.com/id' + friend.id) #{friend.first_name} #{friend.last_name}
+      else
+        li
+          h3.text-center
+            | А нет друзей
